@@ -18,6 +18,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
+  const [pending, setPending] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -44,8 +45,15 @@ export function Navbar() {
   }, []);
 
   function go(id: string) {
-    setOpen(false);
-    scrollToSection(id);
+    if (open) {
+      // Defer the scroll until the mobile drawer's exit (height) animation
+      // finishes — running it concurrently makes mobile browsers cancel the
+      // in-progress smooth scroll, so the links appear to do nothing.
+      setPending(id);
+      setOpen(false);
+    } else {
+      scrollToSection(id);
+    }
   }
 
   return (
@@ -128,7 +136,14 @@ export function Navbar() {
       </nav>
 
       {/* mobile drawer */}
-      <AnimatePresence>
+      <AnimatePresence
+        onExitComplete={() => {
+          if (pending) {
+            scrollToSection(pending);
+            setPending(null);
+          }
+        }}
+      >
         {open && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
