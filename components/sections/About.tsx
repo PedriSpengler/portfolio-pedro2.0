@@ -25,7 +25,7 @@ export function About() {
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-accent-cyan/40 to-transparent opacity-60 blur-md transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl ring-1 ring-white/10">
               <Image
-                src="/foto.jpeg"
+                src="/foto1.png"
                 alt="Pedro Spengler"
                 width={448}
                 height={602}
