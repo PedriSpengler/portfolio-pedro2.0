@@ -50,21 +50,14 @@ export const metadata: Metadata = {
     title: "Pedro Spengler — Desenvolvedor Full-Stack & IA",
     description:
       "Construo produtos reais. Do backend à IA, do conceito ao deploy. SaaS, ERPs e agentes de IA autônomos.",
-    images: [
-      {
-        url: "/og.svg",
-        width: 1200,
-        height: 630,
-        alt: "Pedro Spengler — Desenvolvedor Full-Stack & IA",
-      },
-    ],
+    // Imagem (og:image) gerada por app/opengraph-image.tsx como PNG.
   },
   twitter: {
     card: "summary_large_image",
     title: "Pedro Spengler — Desenvolvedor Full-Stack & IA",
     description:
       "Construo produtos reais. Do backend à IA, do conceito ao deploy.",
-    images: ["/og.svg"],
+    // Imagem (twitter:image) gerada por app/twitter-image.tsx como PNG.
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
