@@ -20,7 +20,7 @@ export const experiences: Experience[] = [
     current: true,
     bullets: [
       "Fundei e liderei a entrega de sistemas web, SaaS e ERPs sob medida para clientes como Lys Paris e Pesqueiro Charrua, gerando R$ 400,00 em receita recorrente.",
-      "Desenvolvi aplicações full-stack com React, TypeScript, Node.js e Supabase, integrando agentes de IA e automações em n8n que reduziram o trabalho manual dos clientes em 70%%.",
+      "Desenvolvi aplicações full-stack com React, TypeScript, Node.js e Supabase, integrando agentes de IA e automações em n8n que reduziram o trabalho manual dos clientes em 70%.",
       "Conduzi toda a operação comercial — prospecção B2B, campanhas de Meta Ads e presença no Instagram — conquistando mais de 15 novos clientes.",
       "Implementei fluxos de multiagentes de IA para automação de processos, resultando em uma redução de 50% no tempo gasto em tarefas repetitivas pelos clientes.",
       "Desenvolvi integrações personalizadas com APIs de terceiros, aumentando a eficiência operacional dos clientes em 40%.",
@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
       "Implementei serviços em Python e pipelines de CI/CD que aceleraram o ciclo de deploy em 12%.",
       "Implementei fluxos de monitoramento e alertas para garantir a estabilidade dos sistemas, resultando em 99,9% de uptime durante o período de estágio.",
       "Implementei testes automatizados e práticas de code review, melhorando a qualidade do código e reduzindo bugs em produção em 30%.",
-      "Automatizei procesoss de clínicas, imobiliárias, transportadoras, consórcios, mercados, escritórios de advocacia, entre outros, utilizando agentes de IA e integrações personalizadas",
+      "Automatizei processos de clínicas, imobiliárias, transportadoras, consórcios, mercados, escritórios de advocacia, entre outros, utilizando agentes de IA e integrações personalizadas",
       "Utilizei metodologias ágeis para colaborar com equipes multifuncionais, entregando soluções de alta qualidade dentro dos prazos estabelecidos.",
       "Desenvolvi fluxos de follow-up, disparo, alimentação de dados e automações personalizadas, aumentando a eficiência operacional dos clientes em 50%.",
     ],
